@@ -4,10 +4,10 @@ import React, {useState} from 'react';
 import {AnalyzeTextStructureOutput} from '@/ai/flows/analyze-text-structure';
 import {Button} from '@/components/ui/button';
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from '@/components/ui/card';
-import {Input} from '@/components/ui/input';
 import {Textarea} from '@/components/ui/textarea';
 import {analyzeTextStructure} from '@/ai/flows/analyze-text-structure';
 import {generateEncouragingStatements} from '@/ai/flows/generate-encouraging-statements';
+import Link from 'next/link';
 
 export default function Home() {
   const [text, setText] = useState('');
@@ -51,8 +51,11 @@ export default function Home() {
             />
           </div>
           <Button onClick={handleAnalyze} className="w-full bg-primary text-primary-foreground" disabled={isLoading}>
-            {isLoading ? '分析中...' : '開始分析'}
+            {isLoading ? '開始分析' : '分析中...'}
           </Button>
+          <Link href="/settings" className="text-sm text-muted-foreground text-center block">
+            前往設定頁面
+          </Link>
         </CardContent>
       </Card>
 
