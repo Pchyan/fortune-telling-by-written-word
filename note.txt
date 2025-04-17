@@ -1,0 +1,6 @@
+firebase.studio上傳到 Github 的步驟如下:
+
+初始化 Git 專案: 在 Firebase Studio 專案的根目錄中執行 git init。
+連結遠端儲存庫: 使用 git remote add origin <your_repository_url> 將本機專案與 Github 儲存庫關聯。
+添加和提交檔案: 使用 git add . 添加所有檔案，然後用 git commit -m "Initial commit" 提交。
+推送程式碼: 執行 git push -u origin main 或 git push -u origin master 將程式碼上傳到 Github。
