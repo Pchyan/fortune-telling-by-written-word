@@ -1,1 +1,2 @@
-// Flows will be imported for their side effects in this file.
+import '@/ai/flows/analyze-text-structure.ts';
+import '@/ai/flows/generate-encouraging-statements.ts';
