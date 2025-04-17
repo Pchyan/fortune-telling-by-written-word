@@ -51,7 +51,7 @@ export default function Home() {
             />
           </div>
           <Button onClick={handleAnalyze} className="w-full bg-primary text-primary-foreground" disabled={isLoading}>
-            {isLoading ? '開始分析' : '分析中...'}
+            {isLoading ? '分析中...' : '開始分析'}
           </Button>
           <Link href="/settings" className="text-sm text-muted-foreground text-center block">
             前往設定頁面
