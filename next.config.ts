@@ -4,7 +4,7 @@ import type {NextConfig} from 'next';
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // output: 'export', // 已移除，改用預設 SSR/Serverless
   basePath: basePath,
   assetPrefix: basePath ? `${basePath}/` : undefined,
   /* config options here */
