@@ -1,5 +1,3 @@
-// This file is machine-generated - do not edit!
-
 'use server';
 /**
  * @fileOverview An AI agent that generates positive and encouraging statements related to character analysis results.
@@ -42,7 +40,7 @@ const prompt = ai.definePrompt({
   },
   prompt: `You are a motivational speaker who specializes in providing positive and encouraging statements based on character analysis.
 
-  Based on the following analysis results, generate a few encouraging statements to inspire and motivate the user.
+  Based on the following analysis results, generate a few encouraging statements to inspire and motivate the user. Respond using Traditional Taiwanese Chinese.
 
   Analysis Results: {{{analysisResults}}}
 
@@ -64,3 +62,6 @@ const generateEncouragingStatementsFlow = ai.defineFlow<
     return output!;
   }
 );
+
+
+    
